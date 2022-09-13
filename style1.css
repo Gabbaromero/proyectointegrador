@@ -210,30 +210,30 @@ h3 {
   display: grid;
   padding: 24px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1px;
+  grid-gap: 25px;
 }
 .galeria img {
-  width: 90%;
-  height: 100%;
+  width: 100%;
+
   border-radius: 12px;
   opacity: 0.4;
 }
 .galeria_item {
   position: relative;
-}
-.galeria_titulo {
-  position: absolute;
-  bottom: 73px;
-  color: rgb(209, 209, 209);
-  font-family: "IBM Plex Sans Condensed", sans-serif;
-  src: url(href="https: //fonts.googleapis.com/css2? family= Hind & familia= IBM+Plex+Sans+Condensado &family= Inter & family= Joan & family= Merriweather+Sans & family= Nunito:wght@500 & family= Open+Sans:wght@800 & family= Patrick+ Hand+SC & family= Quicksand:peso@500;700 & family= Roboto:peso@300;400 & family= Espacio+Mono:peso@700 &mostrar=intercambiar"rel="hoja de estilo">);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+}
+.galeria_titulo {
+  position: absolute;
+  /*  bottom: calc(50% - 15px); */
+  color: rgb(209, 209, 209);
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  src: url(href="https: //fonts.googleapis.com/css2? family= Hind & familia= IBM+Plex+Sans+Condensado &family= Inter & family= Joan & family= Merriweather+Sans & family= Nunito:wght@500 & family= Open+Sans:wght@800 & family= Patrick+ Hand+SC & family= Quicksand:peso@500;700 & family= Roboto:peso@300;400 & family= Espacio+Mono:peso@700 &mostrar=intercambiar"rel="hoja de estilo">);
   margin: 0;
-  padding: 135px;
+  padding: 0 15px;
   font-size: 30px;
+  text-align: center;
 }
 /*cards*/
 .cardssection {
@@ -261,6 +261,7 @@ h3 {
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
+  padding-top: 25px;
 }
 .cardssection .card:hover {
   transform: translateY(-15px);
