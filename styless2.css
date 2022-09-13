@@ -1,0 +1,215 @@
+styless2.css * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 7rem;
+  z-index: 9999;
+  text-decoration: none;
+}
+.logo {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  left: 20px;
+  top: 1px;
+  background-color: none;
+}
+.nav-bar {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+/*menu hamburguesa*/
+.nav i {
+  font-size: 45px;
+  color: rgb(209, 209, 209);
+  cursor: pointer;
+  display: none;
+  background: none;
+  padding: 0 20px;
+  line-height: 60px;
+}
+#toggle-menu {
+  display: none;
+}
+.container {
+  font-family: "Inter", sans-serif;
+  src: url(href="https: //fonts.googleapis.com/css2? family= Hind & family= Inter & family= Joan & family= Merriweather+Sans & family= Nunito:wght@500 & family= Open+Sans:wght@800 & family= Patrick+ Hand+SC & family= Quicksand:peso@500;700 & family= Roboto:peso@300;400 & family= Espacio+Mono:peso@700 &mostrar=intercambiar"rel="hoja de estilo");
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+}
+.nav-enlace {
+  text-decoration: none;
+}
+.container li:last-child > a {
+  margin: 5px;
+  border: 1px solid #52057b;
+  box-shadow: 0px 0px 5px 3px rgb(142, 43, 151);
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #000000;
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 0px;
+  }
+  .nav i {
+    display: block;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: var(--black);
+    flex-direction: column;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 9999;
+    height: calc(100vh - 100px);
+  }
+  .nav-enlace {
+    line-height: 50px;
+  }
+  .nav-enlace:hover,
+  .nav-enlace:active {
+    background: none;
+    color: #8179f5;
+  }
+  .toggle-menu {
+    display: block;
+  }
+
+  #toggle-menu:checked + .container {
+    display: flex;
+  }
+}
+/*body*/
+body {
+  background-image: url("./2c38988ace6c33703ec72246d0cd2507.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+.central {
+  max-width: 320px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.titulologin {
+  font-size: 250%;
+  color: rgb(172, 137, 175);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.login {
+  width: 100%;
+  padding: 50px 30px;
+  background-color: #000000;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  box-sizing: border-box;
+}
+
+.login input {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 110%;
+  color: #1b262c;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.login input::placeholder {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  color: #b8b7b7;
+}
+
+.login button {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 110%;
+  color: #1b262c;
+  font-weight: 600;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  background-color: rgb(172, 137, 175);
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.login button:hover {
+  background-color: #0f4c75;
+  color: #bbe1fa;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.pie-form {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pie-form a {
+  display: block;
+  text-decoration: none;
+  color: rgb(160, 155, 218);
+  margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+  color: #0f4c75;
+}
+button .fa {
+  margin: 8px;
+  line-height: 15px;
+}
