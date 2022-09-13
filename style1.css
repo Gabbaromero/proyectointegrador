@@ -121,12 +121,12 @@
   }
   .sobre_nosotros {
     text-align: center;
-    width: 90%;
+
     font-size: 12px;
   }
   .galeria_titulo {
     text-align: center;
-    display: flex;
+    font-size: 22px !important;
   }
   .galeria {
     display: block;
@@ -408,4 +408,18 @@ form button:hover {
   padding: 1rem 0;
   font-size: 12px;
   background-color: rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    font-size: 20x;
+  }
+  .divider {
+    flex-direction: column;
+  }
+}
+@media (max-width: 667px) {
+}
+.main-content {
+  font-size: inherit;
 }
