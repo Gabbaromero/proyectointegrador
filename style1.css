@@ -42,7 +42,7 @@
 }
 .container {
   font-family: "Inter", sans-serif;
-  src: url(href="https: //fonts.googleapis.com/css2? family= Hind & family= Inter & family= Joan & family= Merriweather+Sans & family= Nunito:wght@500 & family= Open+Sans:wght@800 & family= Patrick+ Hand+SC & family= Quicksand:peso@500;700 & family= Roboto:peso@300;400 & family= Espacio+Mono:peso@700 &mostrar=intercambiar"rel="hoja de estilo");
+
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
@@ -85,12 +85,10 @@
     position: fixed;
     background-color: black;
     flex-direction: column;
-    top: 5px;
+    top: 112px;
     left: 0;
     width: 90%;
-    display: none;
     z-index: 1;
-    height: calc(100vh - 100px);
     transform: translateX(200%);
     transition: all 0.4s ease-out;
   }
@@ -188,11 +186,7 @@ p {
   box-shadow: 0px 2px 4px 0px rgba(87, 4, 83, 0.25);
 }
 h3 {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 2%;
-  padding-left: 42%;
+  text-align: center;
   padding-top: 30px;
   background-color: #000000;
   color: rgb(209, 209, 209);
@@ -227,7 +221,7 @@ h3 {
   /*  bottom: calc(50% - 15px); */
   color: rgb(209, 209, 209);
   font-family: "IBM Plex Sans Condensed", sans-serif;
-  src: url(href="https: //fonts.googleapis.com/css2? family= Hind & familia= IBM+Plex+Sans+Condensado &family= Inter & family= Joan & family= Merriweather+Sans & family= Nunito:wght@500 & family= Open+Sans:wght@800 & family= Patrick+ Hand+SC & family= Quicksand:peso@500;700 & family= Roboto:peso@300;400 & family= Espacio+Mono:peso@700 &mostrar=intercambiar"rel="hoja de estilo">);
+
   margin: 0;
   padding: 0 15px;
   font-size: 30px;
@@ -342,10 +336,9 @@ h3 {
   gap: 20px;
 }
 form {
-  width: 60%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+
   flex-direction: column;
   gap: 20px;
 }
@@ -412,14 +405,23 @@ form button:hover {
 @media (max-width: 768px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
-    font-size: 20x;
   }
-  .divider {
+  footer .main-content {
     flex-direction: column;
+    text-align: center;
   }
 }
 @media (max-width: 667px) {
-}
-.main-content {
-  font-size: inherit;
+  .sesiontitulo h3 {
+    text-align: center;
+  }
+  .sobre_nosotros p {
+    font-size: 16px;
+  }
+  .main-content {
+    font-size: inherit;
+  }
+  .hero__heading {
+    font-size: 25px;
+  }
 }
